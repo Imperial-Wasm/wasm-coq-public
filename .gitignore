@@ -2,6 +2,7 @@
 /_build/
 /node_modules/
 /_esy/
+/esy.lock/
 
 .merlin
 *.install

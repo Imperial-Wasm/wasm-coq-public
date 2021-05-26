@@ -19,9 +19,9 @@
 		"test": "dune runtest"
 	},
 	"dependencies": {
-		"ocaml": "4.8.1000",
-		"@opam/coq": "8.10.1",
-		"coq-flocq": "3.2.0",
+		"ocaml": "4.12.0",
+		"@opam/coq": "8.13.2",
+		"coq-flocq": "3.4.0",
 		"compcert": "github:Mbodin/CompCert#3f06d181874c16887cae0fbc1531631c7a66d275",
 		"@opam/coq-stdpp": "*",
 		"coq-iris": "*",
@@ -40,7 +40,7 @@
 	"devDependencies": {},
 	"resolutions": {
 		"coq-mathcomp-ssreflect": {
-			"source": "github:math-comp/math-comp#ab54764c15886289107ec43b94bc355ada662c4c",
+			"source": "github:math-comp/math-comp#bba621b242e1d3652dfe80e683744f6803f0b896",
 			"override": {
 				"dependencies": {
 					"@opam/coq": "*"
@@ -60,11 +60,11 @@
 			}
 		},
 		"coq-flocq": {
-			"source": "git:https://gitlab.inria.fr/flocq/flocq.git#a9be51660cd865d323b0b3bbb9faa793856ea0de",
-			"version": "3.2.0",
+			"source": "git:https://gitlab.inria.fr/flocq/flocq.git#a5fb412985116ef9b1b14cd5b71027f1e95053c7",
+			"version": "3.4.0",
 			"override": {
 				"dependencies": {
-					"@opam/coq": "8.10.1"
+					"@opam/coq": "8.13.2"
 				},
 				"buildEnv": {
 					"HOME": "#{self.target_dir}",
@@ -81,11 +81,11 @@
 			}
 		},
 		"coq-iris": {
-			"source": "git:https://gitlab.mpi-sws.org/iris/iris.git#69dfcc7191e4cd1954fd6a00e192ad0ebb0697b9",
+			"source": "git:https://gitlab.mpi-sws.org/iris/iris.git#13d5ab4fb16a309a1ea60013960f1cf8194bcb6e",
 			"override": {
 				"buildsInSource": true,
 				"dependencies": {
-					"@opam/coq": "8.10.1",
+					"@opam/coq": "8.13.2",
 					"@opam/coq-stdpp": "*"
 				},
 				"buildEnv": {
@@ -103,10 +103,10 @@
 			}
 		},
 		"@opam/coq-stdpp": {
-			"source": "git:https://gitlab.mpi-sws.org/iris/stdpp.git#6eb05dfc40feef58063bb537fb742eb16bbf86d1",
+			"source": "git:https://gitlab.mpi-sws.org/iris/stdpp.git#64ec9b56a9772c27b11611810e25d2c37de93fb9",
 			"override": {
 				"dependencies": {
-					"@opam/coq": "8.10.1"
+					"@opam/coq": "8.13.2"
 				},
 				"buildEnv": {
 					"HOME": "#{self.target_dir}",
